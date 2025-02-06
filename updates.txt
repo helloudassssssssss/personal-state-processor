@@ -1,7 +1,9 @@
 Estoy probando nuevas funciones del openCV, el cual es una libereria opensources que ovy a estar usando para trackear el estaedo emocional en vivo de la cara de las personas.
 
-img_vid_showcas.py basicamente es para mostrar imagenes y videos xd
+Proceso de aprendizaje:
+- img_vid_showcas.py basicamente es para mostrar imagenes y videos xd
 
-rescale.py tiene dos funciones para reescalar cosas, uno para imagenes videos y live video, y otro para reescalar solo live video
+- rescale.py tiene dos funciones para reescalar cosas, uno para imagenes videos y live video, y otro para reescalar solo live video
 
-si cv.VideoCapture(0) osea que no especificas un path, va a autoamticamente usar la camar de la computeadora, si tenes otra camara podes especificar 1,2,3 dependiendo cuantas camaras tengas
+- si cv.VideoCapture(0) osea que no especificas un path, va a autoamticamente usar la camar de la computeadora, si tenes otra camara podes especificar 1,2,3 dependiendo cuantas camaras tengas
+
