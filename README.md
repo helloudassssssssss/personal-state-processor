@@ -1,11 +1,17 @@
 # personal-state-processor
 Personal state processor Project
 
-Visit notion for a better view
+GitHub structure:
+Branches Main > Dev > feature-{name}
+Where feature-{name} is gonna be merged and tested in Dev once is "finished" > after finished the whole project merge Dev into Main
+
+**Project description, and different components:**
+
+_Visit notion for a better view: https://www.notion.so/Personal-state-tracker-19299ea2218480c4aa55ebff084bcc14?pvs=4_
 
 Core Components & Implementation Ideas
 
-🔹 Face Real-Time Analysis (Emotion Detection)
+**🔹 Face Real-Time Analysis (Emotion Detection)**
 
 **Tools & Methods**:
 - Use **OpenCV** (for real-time camera processing).
@@ -18,7 +24,7 @@ Core Components & Implementation Ideas
 
 ---
 
-🔹 Sleep Tracking
+**🔹 Sleep Tracking**
 
 **Options:**
 1. **Manual Input** (Easiest) – Just input sleep hours each day.
