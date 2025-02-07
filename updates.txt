@@ -19,6 +19,8 @@ Funciones basicas:
   y finalmente cropear imagenes
 - draw.py: contiene algunas funciones basicas sobre como dibujar formas geometricas y ademas tambien escribir sobre un canva, o imagen.
 
+- No lo hice explicitamente, pero tmb podes transformar imagenes de otra forma, rotar, mover toda la imagen hacia un lado, resize image, flipear imagenes (espejo, vertical, horizontal), cropear imagenes.
+- Edges y contours no son lo mismo matematicamente. 
 
 2 tecnicas de deteccion de caras:
 - fc_det_haar.py: que corresponde a face detection haar cascade technique, el cual en pocas palabras es peor que la 2da tecnica que presento abajo.
@@ -33,3 +35,19 @@ Diferencias entre ambos algoritmos para detectar caras:
 - Deep learning based face detection (DNN): usa una dataset masivo de caras para aprender rasgos faciales complejos, y se adapta a nuevas caras, porque aprende sobre el paso.
     Pero si hablamos de consumo de procesador, consume un monton, imaginate que la cpu me iba a 10-20% y con el programa corriendo y detectando mi cara, me va a 80-90%, y es un monton.
     Pero en cambio, es super preciso detectando caras
+
+
+Detecion de expresiones faciales:
+Deepface: es para face analysis, puede detectar emociones, edad, genero, tu raza etc... 
+Esta mas optimizado que DNN.
+Saca patrones de las caras de varios datasets gigantes,  y guarda estos patrones para usarlos en deteccion de caras.
+
+
+[
+  {
+    'emotion': {'angry': 2.1, 'disgust': 0.5, 'fear': 3.2, 'happy': 87.6, 'neutral': 5.6, 'sad': 0.5, 'surprise': 0.5},
+    'dominant_emotion': 'happy'
+  }
+]
+
+
