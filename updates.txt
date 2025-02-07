@@ -26,9 +26,10 @@ Funciones basicas:
 - fc_det_deep_learn_. . ..py (uno seteado para imagenes [_photo], otro para live video [_cam]): que corresponde Deep Learning-Based Face Detection (DNN), la cual es una tecnica mejor para detectar caras en todos los aspectos.
 
 Diferencias entre ambos algoritmos para detectar caras:
-| Feature | **Haar Cascade** | **Deep Learning (DNN)** |
-| --- | --- | --- |
-| **How It Learns** | Memorizes predefined patterns (edges, textures) | Learns from massive datasets using CNNs |
-| **How It Detects Faces** | Matches known patterns to an image | Extracts complex facial features |
-| **Adaptability** | Poor (fixed patterns) | Excellent (learns new features) |
-| **Works in Different Conditions?** | No (bad with lighting, angles, occlusion) | Yes (generalizes well) |
+- Haar cascade technique: usa patrones predefinidos (edges, textures) para clasificar si una imagen/live video, es una cara o no, osea que intenta matchear patrones memorizados que tiene, y los intenta matchear con lo que este viendo. 
+    En power de procesamiento es buenisimo xq no consume casi nada, imaginate que la cpu me iba a 10-20% y con el programa corriendo y detectando mi cara, un 30% constante. 
+    Pero si hablamos en detection de caras con angulos raros, algo que te tape, o ambiente oscuro, entonces le cuesta muchisimo mas, y es posible que no te detecte.
+
+- Deep learning based face detection (DNN): usa una dataset masivo de caras para aprender rasgos faciales complejos, y se adapta a nuevas caras, porque aprende sobre el paso.
+    Pero si hablamos de consumo de procesador, consume un monton, imaginate que la cpu me iba a 10-20% y con el programa corriendo y detectando mi cara, me va a 80-90%, y es un monton.
+    Pero en cambio, es super preciso detectando caras
