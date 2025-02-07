@@ -1,9 +1,34 @@
 Estoy probando nuevas funciones del openCV, el cual es una libereria opensources que ovy a estar usando para trackear el estaedo emocional en vivo de la cara de las personas.
 
 Proceso de aprendizaje:
-- img_vid_showcas.py basicamente es para mostrar imagenes y videos xd
+6/2/25
+- img_vid_showcas.py basicamente es para mostrar imagenes y videos 
 
 - rescale.py tiene dos funciones para reescalar cosas, uno para imagenes videos y live video, y otro para reescalar solo live video
 
 - si cv.VideoCapture(0) osea que no especificas un path, va a autoamticamente usar la camar de la computeadora, si tenes otra camara podes especificar 1,2,3 dependiendo cuantas camaras tengas
 
+
+7/2/25:
+Hoy me concentre en aprender algunas funciones basicas de openCV, un par de tecnologias para deteccion de caras.
+
+Funciones basicas:
+- essential_functions.py: contiene funciones basicas muy importantes como hacer que una imagen, video, cam sea gris; 
+  tmb blurear imagenes;
+  ademas de eso tecnicas para manipular los bordes de las imagenes, edge cascade, dilating the image, eroding, resize image
+  y finalmente cropear imagenes
+- draw.py: contiene algunas funciones basicas sobre como dibujar formas geometricas y ademas tambien escribir sobre un canva, o imagen.
+
+
+2 tecnicas de deteccion de caras:
+- fc_det_haar.py: que corresponde a face detection haar cascade technique, el cual en pocas palabras es peor que la 2da tecnica que presento abajo.
+
+- fc_det_deep_learn_. . ..py (uno seteado para imagenes [_photo], otro para live video [_cam]): que corresponde Deep Learning-Based Face Detection (DNN), la cual es una tecnica mejor para detectar caras en todos los aspectos.
+
+Diferencias entre ambos algoritmos para detectar caras:
+| Feature | **Haar Cascade** | **Deep Learning (DNN)** |
+| --- | --- | --- |
+| **How It Learns** | Memorizes predefined patterns (edges, textures) | Learns from massive datasets using CNNs |
+| **How It Detects Faces** | Matches known patterns to an image | Extracts complex facial features |
+| **Adaptability** | Poor (fixed patterns) | Excellent (learns new features) |
+| **Works in Different Conditions?** | No (bad with lighting, angles, occlusion) | Yes (generalizes well) |
