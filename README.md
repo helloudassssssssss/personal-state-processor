@@ -1,6 +1,14 @@
 # personal-state-processor
 Personal state processor Project
 
+## Project Description
+
+The **Personal State Processor** is a **self-tracking and analysis system** designed to monitor and predict personal well-being using **real-time data collection and machine learning**. This project aims to gather insights from various aspects of daily life, including **facial expressions, sleep patterns, nutrition, exercise, and schedules**, to analyze trends and provide useful predictions.
+
+### **Project Goal**
+
+The goal of this project is to create a **personalized analytical tool** that helps users understand how different factors (such as sleep, food intake, and physical activity) influence their **mood, energy levels, and overall well-being**. By leveraging **data visualization and machine learning**, the system will provide **predictions and insights** on a short-term basis (e.g., **1-day, 3-day, and 7-day forecasts**), helping users optimize their lifestyle and improve their **productivity, health, and mental state**.
+
 Visit notion for a better view
 
 Core Components & Implementation Ideas
