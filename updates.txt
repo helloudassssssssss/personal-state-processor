@@ -51,3 +51,12 @@ Saca patrones de las caras de varios datasets gigantes,  y guarda estos patrones
 ]
 
 
+8/2/25
+
+- deepface_expressions_log.py logea todas las expresiones, conviertiendo las expresiones faciales de miedo en nuetro ya que hay muchos falsos negativos. Logea todo en un archivo csv, y eso lo voy a usar para la data visualizacion con el que experimente en el file de abajo
+
+- expressions_visualization.ipynb: es un archivo jupyterlab, basicamente podes ejecutar cuadros de codigo por separado, y asi evitar tener que renderizar varios graficos en cadena, o leer el mismo dataframe varias veces antes de llegar a generar el grafico. 
+  Jugue con dos tipos de graficos, line chart, el cual toma la cantidad de emociones que hubo en relacion al tiempo.
+  Y tmb jugue con pie chart, el cual muestra cuantas expresiones de cada tipo hay. 
+
+
