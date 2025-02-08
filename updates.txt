@@ -59,4 +59,6 @@ Saca patrones de las caras de varios datasets gigantes,  y guarda estos patrones
   Jugue con dos tipos de graficos, line chart, el cual toma la cantidad de emociones que hubo en relacion al tiempo.
   Y tmb jugue con pie chart, el cual muestra cuantas expresiones de cada tipo hay. 
 
+- emotions_log.csv: es el archivo con el que estuve experimentando yo mismo, y son datos reales tomadas de mi cara y expresion facial durante X tiempo que la verdad no calcule. Podes usar esta data para hacer tus experiemntos, o intentar correr el programa con tus propios datos.
+
 
