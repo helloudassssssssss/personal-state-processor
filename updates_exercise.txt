@@ -5,3 +5,7 @@ toma estos valores y promptea por el ejercicio que queres logear, por ejemplo en
 cada ejercicio esta clasificado por repeticiones o tiempo, porque no podes hacer repeticiones de running por ejemplo, sino que tomas el tiempo, por ejemplo quemas X calorias cada minuto corriendo, un valor aproximado.
 
 y dependiendo del tipo de ejercicio que hayas elegido, entonces te pregunta por el tiempo o repeticiones, y en base a eso logea calculando las calorias quemadas al final.
+
+exercise_log es donde se encuentra los datos introducidos por el usuario
+
+exercise_visalization.ipynb son algunos experimentos de visualizacion que hice
