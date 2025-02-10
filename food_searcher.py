@@ -4,7 +4,7 @@ import pandas as pd
 import spacy
 
 csv_file = "food_log.csv"
-API_KEY = "9o8oUhMVRBKoL7NKjq0qUsYZYlvfsV2OlHdXwCYM"
+API_KEY = "YOUR_API_KEY"
 nlp = spacy.load("en_core_web_sm")
 
 def extract_food_items(food_sentence):
