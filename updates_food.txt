@@ -1,0 +1,2 @@
+food_searcher.py esta compuesto de 5 funciones. 
+1. Limpieza del prompt del usuario usando NLP (natural language processing)
