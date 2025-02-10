@@ -1,0 +1,7 @@
+exercise_tracker.py 
+un file muy simple que toma una database para saber las stats de cada ejercicio, en este caso de calistenia "exercise_database.csv". Podria haber alguna database por ahi en internet con el cual podria simplemente agarrar la API y usar sus valores, pero me di cuenta que por ejemplo con la comida, fue super dificil optimizar el sistema para que busque cosas simples en la database y no me devuelva 1500 resultados. Asi que si, basicamente lo hice para simplificar el programa.
+
+toma estos valores y promptea por el ejercicio que queres logear, por ejemplo en el numero 1 es running (index 0) y el numero 2 es jump rope y asi.
+cada ejercicio esta clasificado por repeticiones o tiempo, porque no podes hacer repeticiones de running por ejemplo, sino que tomas el tiempo, por ejemplo quemas X calorias cada minuto corriendo, un valor aproximado.
+
+y dependiendo del tipo de ejercicio que hayas elegido, entonces te pregunta por el tiempo o repeticiones, y en base a eso logea calculando las calorias quemadas al final.
