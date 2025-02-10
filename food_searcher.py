@@ -29,7 +29,7 @@ def extract_food_items(food_sentence):
 
 #sentence = "Rice with grilled chicken and broccoli"
 #detected_foods = extract_food_items(sentence)
-#print("✅ Detected Food Items:", detected_foods)
+#print("Detected Food Items:", detected_foods)
 
 def search_food_api(food_name):
     url = f"https://api.nal.usda.gov/fdc/v1/foods/search?query={food_name}&pageSize=3&dataType=Branded,Survey%20(FNDDS)&api_key={API_KEY}"
@@ -39,7 +39,7 @@ def search_food_api(food_name):
 
 
 def select_food_from_results(food_results, food_name):
-    print(f"\n✅ Food options found for '{food_name}':")
+    print(f"\nFood options found for '{food_name}':")
     
     for i, food in enumerate(food_results[:5]):
         print(f"{i + 1}. {food['description']}")
@@ -53,7 +53,7 @@ def log_meal_to_csv(meal_name, selected_foods):
 
     # Ensure CSV exists
     if not os.path.exists(csv_file):
-        print("⚠️ CSV file not found. Creating a new one...")
+        print("CSV file not found. Creating a new one...")
         df = pd.DataFrame(columns=columns)
         df.to_csv(csv_file, index=False)
 
@@ -69,7 +69,7 @@ def log_meal_to_csv(meal_name, selected_foods):
     df = pd.concat([df, new_entry], ignore_index=True)
 
     df.to_csv(csv_file, index=False)
-    print("✅ Meal logged successfully!")
+    print("Meal logged successfully!")
 
 
 def food_tracking():
@@ -86,7 +86,7 @@ def food_tracking():
             if selected_food:
                 selected_foods.append(selected_food)
         else:
-            print(f"❌ No results found for '{food_name}'.")
+            print(f"X No results found for '{food_name}'.")
 
     if selected_foods:
         log_meal_to_csv(user_input, selected_foods)
