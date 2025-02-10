@@ -26,9 +26,10 @@ def extract_food_items(food_sentence):
 
     return food_items
 
-sentence = "Rice with grilled chicken and broccoli"
-detected_foods = extract_food_items(sentence)
-print("✅ Detected Food Items:", detected_foods)
+
+#sentence = "Rice with grilled chicken and broccoli"
+#detected_foods = extract_food_items(sentence)
+#print("✅ Detected Food Items:", detected_foods)
 
 def search_food_api(food_name):
     url = f"https://api.nal.usda.gov/fdc/v1/foods/search?query={food_name}&pageSize=3&dataType=Branded,Survey%20(FNDDS)&api_key={API_KEY}"
