@@ -1,5 +1,6 @@
 # personal-state-processor
 Personal state processor Project
+By: Lucas Hsueh
 
 GitHub structure:
 Branches Main > Dev > feature-{name}
