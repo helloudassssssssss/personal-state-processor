@@ -1,0 +1,62 @@
+MOOD PREDICTOR
+This part of the project excites me the most because I get to experiment with training a machine learning model. For this, I used Scikit-Learn, a specialized library that allows for flexible and efficient algorithm training.
+
+Recently, I became interested in neural networks, and I initially wanted to implement one from scratch using only NumPy, without relying on pre-built libraries. However, I quickly realized that this is a complex task that requires a solid theoretical foundation and prior knowledge. So, I decided to start from the basics with Linear Regression.
+
+In this case, I chose Linear Regression to train my model using various entries from the datasets I had built over the past few days.
+
+Mood Prediction Folder Structure
+The mood prediction folder contains three main files:
+
+merged_mood_data.csv: The cleaned and unified dataset used for training the model.
+mood_df_prep.ipynb: A Jupyter Notebook where I performed data preprocessing, ensuring that redundant or unimportant data was cleaned before feeding it into the model for more accurate learning.
+mood_prediction_training.ipynb: The notebook where I trained my own model using Scikit-Learn.
+Training Process Overview
+Since this is my first time applying these techniques, I am still learning, so errors may be present. The general workflow I followed includes:
+
+Data Cleaning:
+
+Ensuring the dataset is properly structured.
+Removing missing or redundant values.
+Preparing the dataset to improve model accuracy.
+Data Splitting:
+
+It's essential to split the dataset into training data and testing data.
+In this case, I used an 80/20 split, where 80% of the data is used to train the model, and 20% is reserved for testing its accuracy.
+Training the Model:
+
+I used a pre-built function from Scikit-Learn to train the model using the selected features (sleep hours, stress level, and calories burned).
+This step ensures that the model learns from the training data to make predictions.
+Model Evaluation:
+
+After training, it’s crucial to assess how well the model performs.
+I used three key evaluation metrics:
+MAE (Mean Absolute Error)
+MSE (Mean Squared Error)
+R² Score (Coefficient of Determination)
+Since these mathematical formulas can be difficult to express here, I will upload a PDF explaining them in detail with examples.
+
+Making Predictions:
+
+With the trained model, I can now predict mood levels based on input data.
+For example, if I input 6 hours of sleep, stress level 5, and 300 calories burned, the model predicts how stressed I will be in that situation.
+Data Relationships and Insights
+All datasets (e.g., generated_exercise_log.csv, mood_log.csv) are interconnected. This means that:
+
+If I sleep poorly, I may lack the motivation to exercise.
+If I have an exam the next day, my stress levels will increase significantly.
+If both situations occur on the same day, my mood score will worsen, indicating higher stress and exhaustion.
+I also explored some statistics and visualizations extracted from the model:
+
+Feature Importance Analysis:
+I examined which variables influenced mood predictions the most.
+Calories burned had little to no impact, while sleep hours and stress levels were the strongest factors.
+Correlation Heatmap:
+I analyzed the correlation between features, revealing relationships between sleep, stress, exercise, and mood.
+
+Next Steps
+The next step is to refine the model by adjusting parameters and testing different approaches to get a better final accuracy:
+
+Since calories burned had minimal impact on mood, it could be removed to simplify the model.
+Alternatively, I could introduce new factors that may affect mood, such as daily water intake, social interactions, or diet.
+This project is still in progress, and I look forward to further improving the model and exploring new insights from my personal data.
