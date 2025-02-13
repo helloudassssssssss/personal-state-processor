@@ -36,6 +36,33 @@ MSE (Mean Squared Error)
 R² Score (Coefficient of Determination)
 Since these mathematical formulas can be difficult to express here, I will upload a PDF explaining them in detail with examples.
 
+
+Model Performance Evaluation
+After training the Linear Regression model, I evaluated its accuracy using three key metrics: MAE, MSE, and R². Here’s what they mean:
+
+- Mean Absolute Error (MAE): 0.44
+This means that, on average, the model's predictions are 0.44 points away from the actual mood scores.
+
+Lower MAE is better since it indicates smaller prediction errors.
+In this case, 0.44 is a low error, meaning the model is making fairly accurate predictions.
+- Mean Squared Error (MSE): 0.26
+MSE measures the average squared difference between predicted and actual mood scores.
+
+Since the errors are squared, larger errors impact the score more.
+A lower value like 0.26 suggests that the model rarely makes large mistakes.
+However, since the values are squared, MSE is less interpretable than MAE, so we use it mainly for optimization.
+- R² Score (Coefficient of Determination): 0.75
+R² tells us how well the model explains the variance in mood scores.
+
+0.75 means that 75% of the changes in mood can be explained by sleep, stress, and exercise.
+The closer R² is to 1.0, the better the model fits the data.
+A score of 0.75 is considered good, meaning the model captures most of the patterns in the dataset.
+🔹 Summary & Interpretation
+The model performs well, with an MAE of 0.44, meaning predictions are quite close to actual values.
+MSE of 0.26 confirms that errors are generally small.
+R² of 0.75 suggests that the model successfully explains most mood variations, though there is still room for improvement.
+
+
 Making Predictions:
 
 With the trained model, I can now predict mood levels based on input data.
